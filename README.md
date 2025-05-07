@@ -1,4 +1,4 @@
-# Will-the-Customer-Accept-the-Coupon-
+# Will-the-Customer-Accept-the-Coupon?
 AI/ML Practical Application 1
 
 ### Findings: Will the Customer Accept the Coupon?
