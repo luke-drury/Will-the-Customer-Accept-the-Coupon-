@@ -1,21 +1,52 @@
-# Will-the-Customer-Accept-the-Coupon?
-AI/ML Practical Application 1
+# Coupon Acceptance Analysis
 
-### Findings: Will the Customer Accept the Coupon?
+This project explores patterns in coupon acceptance using visualizations from a dataset that includes demographic, behavioral, and income-related variables.
 
-#### Visual Summary:
+---
 
-- **Education**: High school and college-level users showed higher coupon acceptance. Graduate-level users were more selective.
-- **Age**: Younger users (21–30) accepted the most coupons.
-- **Income**: Mid-income users ($25K–$74K) were more likely to use coupons.
-- **Gender & Destination**: No major gender differences. Acceptance was higher for restaurant and urgent place destinations.
-- **Time of Day**: 6PM was the most popular time for coupon usage.
-- **Weather**: Sunny days saw significantly more coupon acceptance.
-- **Coupon Type**: Popular coupons included Coffee House, Restaurant(<20), and Take Away. Bars and high-end restaurants had lower acceptance.
+## Findings
 
-#### Interpretation & Next Steps:
+- Education Level
+  - Highest coupon acceptance observed among individuals with *some college* or *no degree*.
+  - Graduate degree holders show the lowest overall response.
+  - Balanced behavior found among Bachelor's and Associate's degree holders.
 
-- Focus campaigns on younger, mid-income users.
-- Schedule coupon offers around 6PM and sunny weather.
-- Optimize offerings for lower-cost food and drinks.
-- Consider redesigning or bundling low-performing coupon types.
+- Age Distribution
+  - Coupon acceptance peaks in the 21–26 age group.
+  - Non-acceptance is more evenly distributed across all age groups.
+  - Younger individuals (especially under 30) are more likely to accept coupons.
+
+- Income Level
+  - Strongest coupon acceptance among those earning $50,000–$87,000.
+  - Notably high acceptance in the lowest income group (<$12,500).
+  - High-income earners ($100,000+) tend to decline coupons more often.
+
+- Gender & Destination
+  - Females are more likely to accept coupons than males.
+  - Respondents with no urgent destination show the highest acceptance.
+  - Acceptance is relatively similar across Home and Work destinations.
+
+---
+
+## Next Steps
+
+- Education
+  - Calculate and visualize coupon acceptance rate (%) by education level.
+  - Group educational levels into broader categories (e.g., Low, Medium, High).
+
+- Age
+  - Bin age into ranges (e.g., <25, 25–40, 40–60, 60+) for clearer analysis.
+  - Run a chi-squared test or logistic regression to assess statistical significance.
+
+- Income
+  - Normalize bar plots to show percentage acceptance by income bracket.
+  - Include a predictive model (e.g., logistic regression) to quantify the effect of income.
+
+- Gender & Destination
+  - Investigate interaction effects (e.g., gender * destination).
+  - Use grouped or faceted plots to explore overlaps between variables.
+
+- General Enhancements
+  - Create a correlation heatmap for one-hot encoded categorical variables.
+  - Build a predictive model (logistic regression or decision tree).
+  - Develop an interactive dashboard using Streamlit or Plotly Dash.
